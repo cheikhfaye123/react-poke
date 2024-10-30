@@ -1,42 +1,92 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4ff;
+  font-family: 'Arial', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #333;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TitleSection {
+  background-color: #5d89ff;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.TitleSection h2 {
+  margin: 0;
+  font-size: 36px;
 }
 
-.card {
-  padding: 2em;
+.TitleSection input {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #4ca8ee;
+  font-size: 18px;
+  padding-left: 15px;
+  margin-top: 10px;
+  transition: border-color 0.3s;
 }
 
-.read-the-docs {
-  color: #888;
+.TitleSection input:focus {
+  outline: none;
+  border-color: #061e60;
+}
+
+.TitleSection button {
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  border-radius: 25px;
+  background-color: #061e60;
+  font-size: 18px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.TitleSection button:hover {
+  background-color: #4ca8ee;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.DisplaySection h1 {
+  font-size: 28px;
+  color: #061e60;
+}
+
+.DisplaySection h3,
+.DisplaySection h4 {
+  margin: 5px;
+  font-size: 20px;
+  color: #333;
+}
+
+.DisplaySection img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.793);
 }
